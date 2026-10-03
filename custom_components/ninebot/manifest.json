@@ -1,0 +1,17 @@
+{
+  "domain": "ninebot",
+  "name": "Ninebot",
+  "codeowners": [
+    "@Wuty-zju"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/Wuty-zju/ha_ninebot",
+  "integration_type": "device",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/Wuty-zju/ha_ninebot/issues",
+  "loggers": [
+    "custom_components.ninebot"
+  ],
+  "requirements": [],
+  "version": "1.2.1"
+}
