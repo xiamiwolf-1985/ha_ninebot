@@ -1,0 +1,196 @@
+{
+  "config": {
+    "flow_title": "Ninebot",
+    "step": {
+      "user": {
+        "title": "Connect Ninebot account",
+        "description": "Enter your Ninebot account credentials.",
+        "data": {
+          "username": "Username",
+          "password": "Password",
+          "lang": "Language",
+          "default_scan_interval": "Default scan interval (seconds)",
+          "unlocked_scan_interval": "Unlocked scan interval (seconds)",
+          "charging_scan_interval": "Charging scan interval (seconds)",
+          "discharge_power_window_seconds": "Discharge power smoothing window (seconds)",
+          "charge_power_window_seconds": "Charge power smoothing window (seconds)",
+          "token_refresh_interval_hours": "Token refresh interval (hours)",
+          "device_list_refresh_interval_hours": "Device list refresh interval (hours)",
+          "max_device_info_concurrency": "Max concurrent device info requests",
+          "device_info_failure_tolerance": "Device info failure tolerance (times)",
+          "debug": "Enable debug logs"
+        }
+      },
+      "init": {
+        "title": "Ninebot options",
+        "description": "Adjust language, polling strategy and debug settings.",
+        "data": {
+          "username": "Username",
+          "password": "Password",
+          "lang": "Language",
+          "default_scan_interval": "Default scan interval (seconds)",
+          "unlocked_scan_interval": "Unlocked scan interval (seconds)",
+          "charging_scan_interval": "Charging scan interval (seconds)",
+          "discharge_power_window_seconds": "Discharge power smoothing window (seconds)",
+          "charge_power_window_seconds": "Charge power smoothing window (seconds)",
+          "token_refresh_interval_hours": "Token refresh interval (hours)",
+          "device_list_refresh_interval_hours": "Device list refresh interval (hours)",
+          "max_device_info_concurrency": "Max concurrent device info requests",
+          "device_info_failure_tolerance": "Device info failure tolerance (times)",
+          "debug": "Enable debug logs"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid username or password",
+      "cannot_connect": "Cannot connect to Ninebot cloud",
+      "api_error": "Ninebot API returned an error",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This account is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Ninebot options",
+        "description": "Adjust account, language, polling strategy and debug settings.",
+        "data": {
+          "username": "Username",
+          "password": "Password",
+          "lang": "Language",
+          "default_scan_interval": "Default scan interval (seconds)",
+          "unlocked_scan_interval": "Unlocked scan interval (seconds)",
+          "charging_scan_interval": "Charging scan interval (seconds)",
+          "discharge_power_window_seconds": "Discharge power smoothing window (seconds)",
+          "charge_power_window_seconds": "Charge power smoothing window (seconds)",
+          "token_refresh_interval_hours": "Token refresh interval (hours)",
+          "device_list_refresh_interval_hours": "Device list refresh interval (hours)",
+          "max_device_info_concurrency": "Max concurrent device info requests",
+          "device_info_failure_tolerance": "Device info failure tolerance (times)",
+          "debug": "Enable debug logs"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid username or password",
+      "cannot_connect": "Cannot connect to Ninebot cloud",
+      "api_error": "Ninebot API returned an error",
+      "unknown": "Unexpected error"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "battery": {
+        "name": "Main Battery Level"
+      },
+      "battery_calculated": {
+        "name": "Main Battery Level (Calculated)"
+      },
+      "device_name": {
+        "name": "Vehicle Name"
+      },
+      "sn": {
+        "name": "Serial Number"
+      },
+      "vehicle_lock_raw": {
+        "name": "Vehicle Lock Raw State"
+      },
+      "gsm_csq": {
+        "name": "GSM Signal Strength (CSQ)"
+      },
+      "gsm_rssi": {
+        "name": "GSM Signal Strength (RSSI)"
+      },
+      "remaining_range": {
+        "name": "Remaining Range"
+      },
+      "remaining_charge_time": {
+        "name": "Remaining Charge Time"
+      },
+      "gsm_report_timestamp": {
+        "name": "GSM Report Timestamp"
+      },
+      "gsm_report_time": {
+        "name": "GSM Report Time"
+      },
+      "location": {
+        "name": "Vehicle Location"
+      },
+      "battery_nominal_energy": {
+        "name": "Main Battery Nominal Energy"
+      },
+      "battery_energy_delta": {
+        "name": "Main Battery Energy Delta"
+      },
+      "battery_outflow_energy_step": {
+        "name": "Main Battery Outflow Energy Step"
+      },
+      "battery_inflow_energy_step": {
+        "name": "Main Battery Inflow Energy Step"
+      },
+      "battery_outflow_power": {
+        "name": "Main Battery Outflow Power"
+      },
+      "battery_inflow_power": {
+        "name": "Main Battery Inflow Power"
+      },
+      "battery_outflow_energy_daily": {
+        "name": "Daily Main Battery Outflow"
+      },
+      "battery_outflow_energy_monthly": {
+        "name": "Monthly Main Battery Outflow"
+      },
+      "battery_outflow_energy_total": {
+        "name": "Accumulated Main Battery Outflow"
+      },
+      "battery_inflow_energy_daily": {
+        "name": "Daily Main Battery Inflow"
+      },
+      "battery_inflow_energy_monthly": {
+        "name": "Monthly Main Battery Inflow"
+      },
+      "battery_inflow_energy_total": {
+        "name": "Accumulated Main Battery Inflow"
+      }
+    },
+    "binary_sensor": {
+      "vehicle_lock": {
+        "name": "Vehicle Lock"
+      },
+      "charging": {
+        "name": "Charging Status"
+      },
+      "main_power": {
+        "name": "Main Power Status"
+      }
+    },
+    "lock": {
+      "vehicle_lock_control": {
+        "name": "Vehicle Lock"
+      }
+    },
+    "image": {
+      "vehicle_image": {
+        "name": "Vehicle Image"
+      }
+    },
+    "button": {
+      "info": {
+        "name": "Info"
+      }
+    },
+    "number": {
+      "main_battery_voltage": {
+        "name": "Main Battery Voltage"
+      },
+      "battery_capacity": {
+        "name": "Battery Capacity"
+      },
+      "battery_max_range": {
+        "name": "Max Range"
+      }
+    }
+  }
+}
